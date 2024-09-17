@@ -3,6 +3,9 @@
 ## Overview
 
 This project is a user-level threads (uthreads) library, developed as part of the Hebrew University OS course. It provides the ability to manage multiple threads at the user level, without relying on kernel-level threading. The library includes support for thread creation, termination, blocking, resuming, and sleeping. It also features a timer mechanism to manage thread execution, using quantums to control how long each thread runs.
+### How the threads switch states 
+
+![Thread States Diagram](./thread_state.png)
 
 ## Features
 
@@ -16,6 +19,7 @@ This project is a user-level threads (uthreads) library, developed as part of th
 ## Files
 
 - **uthreads.cpp**: The main implementation of the user-level threads library. It contains all the core functionality, including thread creation, termination, blocking, sleeping, and context switching.
+- **uthreads.h**: The header file of the library. contains the 'public' functions of the library.
 - **Makefile**: A build file used to compile the project.
 
 ## Key Functions
